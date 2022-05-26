@@ -8,6 +8,10 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
+app.use(cors());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
 database
     // .sync()
 	.sync({ force: true }) // 和 db 連線時，強制重設 db
