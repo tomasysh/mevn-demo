@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
@@ -35,6 +34,10 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+body {
+  background-color: lightgray;
 }
 
 a,
